@@ -271,6 +271,6 @@ For complete TGA100A specifications and troubleshooting procedures, refer to:
 
 ## Next Steps
 
-- [FG Fundamentals](fundamentals.md) — Theory and flux equations
+- [FG Fundamentals](../fundamentals/theory.md) — Theory and flux equations
 - [Processing Pipeline](processing-pipeline.md) — MATLAB script workflow
 - [Troubleshooting](troubleshooting.md) — Common issues and solutions

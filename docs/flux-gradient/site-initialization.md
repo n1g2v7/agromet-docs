@@ -9,8 +9,6 @@ The processing pipeline loads this via `db_get_site_ini(siteID, dateStr)` and th
 
 This page explains **how to adapt the system to a new site** by editing `*_init_all.m`.
 
----
-
 ## 1) Concept: the init file is a site adapter
 
 The init file is **not a static config**. It is a time-dependent function that:
@@ -23,8 +21,6 @@ The init file is **not a static config**. It is a time-dependent function that:
 
 **Rule of thumb:** if you are onboarding a new site, you should not modify the pipeline scripts first.
 Start by making the init file correct.
-
----
 
 ## 2) Adaptation levers
 
@@ -41,8 +37,6 @@ flowchart TB
   A --> G["TGA manifold and alignment<br>levelTime startLevel shiftDefault"]
   A --> H["Time resolution<br>timeStep outputDur audit"]
 ```
-
----
 
 ## 3) Required site-level fields (typical)
 
@@ -66,8 +60,6 @@ Most sites define the following top-level fields (names may vary slightly):
 
 - **Climate station linkage**
   - `dbIni.ENVCAN_ID` or equivalent
-
----
 
 ## 4) Epochs: configuring changes over time
 
@@ -93,8 +85,6 @@ Use epochs for:
 
 **Best practice:** keep epochs small and explicit.
 
----
-
 ## 5) Instrument roster and indexing rules
 
 Instruments are stored as:
@@ -110,8 +100,6 @@ Sites typically assign indices like:
 1. Each index must be unique.
 2. Keep a stable ordering: sonics first, TGAs after.
 3. Do not re-use an index for a different instrument type in the same epoch.
-
----
 
 ## 6) Sonic and SmartFlux configuration
 
@@ -149,8 +137,6 @@ SmartFlux exports often differ from TOA5 logger outputs:
 - verify file cadence matches `outputDur` relative to `timeStep`
 - run a one day smoke test before scaling up
 
----
-
 ## 7) Plot mapping
 
 Plot mapping controls which plots are associated with each sonic.
@@ -160,8 +146,6 @@ Key fields:
 - `Instrument(i).plotCalcs`
 
 Wrong mapping can produce physically wrong results without necessarily throwing an error.
-
----
 
 ## 8) TGA configuration
 
@@ -178,15 +162,11 @@ TGA blocks commonly include:
 
 **Operational note:** `shiftDefault` may change over time. Update it using epochs when needed.
 
----
-
 ## 9) Time resolution and outputDur
 
 Many sites use half hourly timeStep 48.
 
 If you switch to hourly timeStep 24, audit every instrument outputDur and re-run the smoke tests.
-
----
 
 ## 10) New site adaptation checklist
 

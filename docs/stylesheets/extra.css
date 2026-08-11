@@ -203,3 +203,17 @@ html.mzo-noscroll, html.mzo-noscroll body { overflow: hidden; }
   padding: 6px 10px;
   border-radius: 10px;
 }
+
+.md-typeset h2 {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+/* skip the border on the first h2 directly under the page title so it
+ * doesn't look like a stray line right under the header */
+.md-typeset > h2:first-of-type {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 1.5rem;
+}

@@ -5,8 +5,6 @@ CWR Lab MATLAB workflow. It focuses on **how the pipeline runs** and **what it p
 Site-specific customisation is handled entirely through the site initialization file
 (`*_init_all.m`) and is documented separately in **Site Initialization**.
 
----
-
 ## 1. What FG Processing Does
 
 The FG pipeline converts raw FG system data (TGA logger outputs and sonic/SmartFlux
@@ -27,8 +25,6 @@ outputs) into:
 | N₂O flux | ng N₂O-N m⁻² s⁻¹ |
 | CO₂ flux | µg CO₂ m⁻² s⁻¹ |
 
----
-
 ## 2. Canonical Entry Points
 
 The typical top-level runner is:
@@ -43,8 +39,6 @@ A multi-site automation layer may call:
 The site adapter file is always loaded first via:
 
 - `db_get_site_ini(siteID, dateStr)` → evaluates `dbIni = <SITEID>_init_all(dateStr)`
-
----
 
 ## 3. Pipeline Stages and Outputs
 
@@ -70,8 +64,6 @@ time step.
 
 **Output:** half-hour chunk files (location set by site conventions)
 
----
-
 ### 3.2 Process Half-Hours → MATLAB Structures
 
 **Purpose:** parse half-hour chunks into standardised MATLAB structures.
@@ -85,8 +77,6 @@ time step.
 
 **Output:** MATLAB `.mat` structure files under `structures/`
 
----
-
 ### 3.3 Structures → Diagnostic Vectors
 
 **Purpose:** assemble continuous vector time series from per-half-hour structures.
@@ -94,8 +84,6 @@ time step.
 - Primary script: `db_create_vectors`
 
 **Output:** ASCII vectors and MATLAB vector files under `vectors/`
-
----
 
 ### 3.4 Flux-Gradient Calculations
 
@@ -132,8 +120,6 @@ and site geometry.
 
 **Output:** calculation tables and products under `calculations/`
 
----
-
 ### 3.5 QC and Filtering
 
 The pipeline applies a hierarchical quality control scheme:
@@ -146,14 +132,10 @@ The pipeline applies a hierarchical quality control scheme:
 6. Site-specific filters — wind direction, fetch sectors (defined in `*_init_all.m`)
 7. Manual QC — CSV-based filter files for known instrument problems
 
----
-
 ### 3.6 Diagnostics and Plots
 
 - Primary script: `db_plot_TGA_diagnostics(dbIni, fileNames, visibleOff)`
 - Generates diagnostic images and figures under the site output tree
-
----
 
 ## 4. Testing a New Site Configuration
 
@@ -165,8 +147,6 @@ Before running a full year, validate in three steps:
 
 If any step fails, review **Site Initialization** (instrument roster, parsing fields,
 `outputDur/timeStep`, plot mapping, and TGA manifold timing).
-
----
 
 ## 5. What Is Not Defined Here
 

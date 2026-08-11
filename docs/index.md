@@ -21,7 +21,7 @@ All network sites employ two complementary micrometeorological measurement techn
 
     About the ON1 site, instrumentation, and measurement principles
 
-    [:octicons-arrow-right-24: Get started](introduction/overview.md)
+    [:octicons-arrow-right-24: Get started](introduction/overview/data-and-methods.md)
 
 -   :material-weather-windy:{ .lg .middle } __Eddy-Covariance__
 
@@ -29,7 +29,7 @@ All network sites employ two complementary micrometeorological measurement techn
 
     Direct turbulent flux measurements with high-frequency data
 
-    [:octicons-arrow-right-24: Learn EC](eddy-covariance/fundamentals.md)
+    [:octicons-arrow-right-24: Learn EC](eddy-covariance/theory.md)
 
 -   :material-gradient-vertical:{ .lg .middle } __Flux-Gradient__
 
@@ -37,7 +37,7 @@ All network sites employ two complementary micrometeorological measurement techn
 
     Gradient-based flux estimation using MOST theory
 
-    [:octicons-arrow-right-24: Learn FG](flux-gradient/fundamentals.md)
+    [:octicons-arrow-right-24: Learn FG](flux-gradient/fundamentals/theory.md)
 
 -   :material-book-alphabet:{ .lg .middle } __Glossary__
 
@@ -45,7 +45,7 @@ All network sites employ two complementary micrometeorological measurement techn
 
     Complete variable definitions and diagnostic parameters
 
-    [:octicons-arrow-right-24: View glossary](glossary.md)
+    [:octicons-arrow-right-24: View glossary](glossary/using-this-glossary.md)
 
 </div>
 
@@ -59,10 +59,9 @@ All network sites employ two complementary micrometeorological measurement techn
 ## Getting Started
 
 !!! tip "New Users Start Here"
-    1. Read the [Site Overview](introduction/overview.md) to understand the measurement setup
-    2. Review the [Instrumentation](introduction/instrumentation.md) section
-    3. Choose measurement method: [EC](eddy-covariance/fundamentals.md) or [FG](flux-gradient/fundamentals.md)
-    4. Familiarize with the [EC Fundamentals](eddy-covariance/fundamentals.md) and [FG Fundamentals](flux-gradient/fundamentals.md) pages
+    1. Read the [Site Overview](introduction/overview/data-and-methods.md) to understand the measurement setup
+    2. Review the [Instrumentation](introduction/instrumentation/flux-gradient.md) section
+    3. Choose measurement method: [EC](eddy-covariance/theory.md) or [FG](flux-gradient/fundamentals/theory.md)
 
 ## Video Tutorial
 

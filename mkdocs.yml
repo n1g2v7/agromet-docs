@@ -30,14 +30,17 @@ theme:
   
   features:
     - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
     - navigation.top
+    - navigation.tracking
+    - navigation.footer
     - search.suggest
     - search.highlight
     - content.code.copy
     - content.code.annotate
-    - toc.integrate
+    # - toc.integrate
   
   icon:
     repo: fontawesome/brands/github
@@ -103,26 +106,54 @@ exclude_docs: |
 nav:
   - Home: index.md
   - Introduction:
-      - Overview: introduction/overview.md
-      - Site Description: introduction/site-description.md
-      - Instrumentation: introduction/instrumentation.md
+      - Overview:
+          - Site, Data & Methods: introduction/overview/data-and-methods.md
+          - Visual Overview: introduction/overview/visual-overview.md
+          - Getting Started: introduction/overview/getting-started.md
+      - Site Description:
+          - About the Site: introduction/site-description/about-the-site.md
+          - Visiting the Site: introduction/site-description/visiting-the-site.md
+          - Measurement Setup: introduction/site-description/measurement-setup.md
+          - Site Records: introduction/site-description/site-records.md
+      - Instrumentation:
+          - Flux-Gradient Instrumentation: introduction/instrumentation/flux-gradient.md
+          - Eddy-Covariance Instrumentation: introduction/instrumentation/eddy-covariance.md
+          - Sensor Placement & Maintenance: introduction/instrumentation/placement-maintenance.md
+          - Resources: introduction/instrumentation/resources.md
   - Processing:
-      - Overview: processing/overview.md
+      - Processing Overview: processing/overview.md
       - Daily Automation: processing/automation_task_scheduler.md
       - Data Collection Workflows: processing/data_collection_workflows.md
       - Data Transfer Workflows: processing/data_transfer_workflows.md
       - Eddy Covariance Pipeline: processing/eddy_covariance_pipeline.md
       - Flux-Gradient Pipeline: processing/flux_gradient_pipeline.md
   - Eddy-Covariance Analysis:
-      - EC Fundamentals: eddy-covariance/fundamentals.md
+      - EC Theory: eddy-covariance/theory.md
+      - Flux Calculations: eddy-covariance/flux-calculations.md
+      - Typical Values & Data Quality: eddy-covariance/typical-values-quality.md
+      - Resources: eddy-covariance/resources.md
   - Flux-Gradient Analysis:
-      - FG Fundamentals: flux-gradient/fundamentals.md
-      - TGA System: flux-gradient/tga-system.md
+      - Fundamentals:
+          - Theory & MOST: flux-gradient/fundamentals/theory.md
+          - Calculation Method: flux-gradient/fundamentals/calculation-method.md
+          - Quality & Comparison: flux-gradient/fundamentals/quality-comparison.md
+          - Resources: flux-gradient/fundamentals/resources.md
+      - TGA System: 
+          - System Overview & Cycle: flux-gradient/tga-system/overview-and-cycle.md
+          - Pressure & Flow Variables: flux-gradient/tga-system/pressure-and-flow.md
+          - Monitoring & Reference: flux-gradient/tga-system/monitoring-and-reference.md
       - Processing Pipeline: flux-gradient/processing-pipeline.md
       - Site Initialization: flux-gradient/site-initialization.md
       - Troubleshooting: flux-gradient/troubleshooting.md
-  - Glossary: glossary.md
-  - References: references.md
+  - Glossary:
+      - Using This Glossary: glossary/using-this-glossary.md
+      - Flux-Gradient Variables: glossary/flux-gradient-variables.md
+      - Eddy Covariance Variables: glossary/eddy-covariance-variables.md
+      - Shared Variables: glossary/shared-variables.md
+  - References:
+      - Instrument Manuals: references/instrument-manuals.md
+      - Literature & Theses: references/literature-theses.md
+      - Resources & Contacts: references/resources-contacts.md
 
 # Extra
 extra:

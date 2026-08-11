@@ -2,8 +2,6 @@
 
 This page lists common failure modes when onboarding or modifying a site.
 
----
-
 ## 1) No files found or nothing splits
 
 Likely causes:
@@ -17,8 +15,6 @@ What to check:
 - confirm fileExt matches real files
 - confirm dateStr is after the epoch start
 
----
-
 ## 2) Split works but structures are missing or empty
 
 Likely causes:
@@ -29,8 +25,6 @@ Likely causes:
 What to check:
 - inspect one raw file and confirm delimiter and header assumptions
 - confirm output naming conventions
-
----
 
 ## 3) Vectors exist but FG calculations are wrong or missing
 
@@ -44,8 +38,6 @@ What to check:
 - verify plot mapping against tower layout
 - verify manifold timing and start level
 - treat shiftDefault as tunable and update in epochs if it changed
-
----
 
 ## 4) Subtle bias or drift in gradients or fluxes
 
