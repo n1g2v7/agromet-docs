@@ -81,6 +81,22 @@
 | B | 20-60 | [Description] |
 | C | 60+ | [Description] |
 
+## Site Diagram
+
+```mermaid
+graph TB
+    A[ON1 Site] --> B[Eddy Covariance System]
+    A --> C[Flux-Gradient System]
+    B --> D[IRGASON or CSAT-3+Li-7500]
+    B --> E[High-frequency 10 Hz data]
+    C --> F[TGA100A Analyzer]
+    C --> G[Multi-height sampling]
+    D --> H[30-min fluxes]
+    F --> H
+    E --> H
+    G --> H
+```
+
 ## Photo Gallery
 
 <div class="grid cards" markdown>

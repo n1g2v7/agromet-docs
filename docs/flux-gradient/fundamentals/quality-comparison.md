@@ -20,8 +20,6 @@ Additional TGA-specific thresholds:
 | Outliers per half-hour | > 100 outlier samples | Reject half-hour |
 | Zero or negative concentrations | Any | Convert to NaN |
 
----
-
 ## Advantages and Limitations
 
 ### Advantages ✓

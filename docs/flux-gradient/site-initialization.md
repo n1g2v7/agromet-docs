@@ -166,7 +166,7 @@ TGA blocks commonly include:
 
 Many sites use half hourly timeStep 48.
 
-If you switch to hourly timeStep 24, audit every instrument outputDur and re-run the smoke tests.
+If you switch to hourly timeStep 24, audit every instrument `outputDur` and re-run the smoke tests.
 
 ## 10) New site adaptation checklist
 

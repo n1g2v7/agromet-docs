@@ -50,6 +50,7 @@ This page documents diagnostic variables for the eddy covariance (EC) measuremen
 | **Typical Range** | -30 to +15 μmol/m²/s |
 
 **Sign Convention**:
+
 - **Negative**: Downward flux (uptake by vegetation)
 - **Positive**: Upward flux (respiration)
 
@@ -73,6 +74,7 @@ This page documents diagnostic variables for the eddy covariance (EC) measuremen
 | **Typical Range** | -50 to +400 W/m² |
 
 Where:
+
 - $\rho$ = air density (kg/m³)
 - $c_p$ = specific heat of air (1005 J/kg/K)
 - $T$ = air temperature (K)
@@ -88,6 +90,7 @@ Where:
 | **Typical Range** | 0 to +500 W/m² |
 
 Where:
+
 - $\lambda$ = latent heat of vaporization (2.45 MJ/kg)
 - $\rho_v$ = water vapor density (g/m³)
 
@@ -104,12 +107,14 @@ Where:
 | **Typical Range** | 0.1 to 1.0 m/s |
 
 **Importance**:
+
 - Characterizes turbulent mixing
 - Critical for flux-gradient calculations
 - Quality control parameter (u* threshold)
 - Footprint calculations
 
 **Quality Threshold**:
+
 - Nighttime fluxes typically filtered when $u_* < 0.1$ m/s (site-specific)
 
 ### Obukhov Length

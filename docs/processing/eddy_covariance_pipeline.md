@@ -25,7 +25,7 @@ flowchart TB
 ## Notes
 
 - Instrument-specific details (e.g., IRGASON, CSAT3, LI-7500) are handled upstream
-- The EC workflow is largely external to the MATLAB db_* system
+- The core EddyPro flux calculation itself is external to the MATLAB `db_*` system
 - Outputs are synchronized with FG products for unified archiving
 
-Continue to the detailed [Eddy-Covariance Analysis](../eddy-covariance/fundamentals.md) to learn about the  setup and context.
+Continue to the detailed [Eddy-Covariance Analysis](../eddy-covariance/theory.md) to learn about the  setup and context.

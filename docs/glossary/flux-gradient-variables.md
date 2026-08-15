@@ -15,6 +15,7 @@ This page documents diagnostic variables for the flux-gradient (FG) measurement 
 | **Typical Range** | Site-specific; depends on pump capacity and flow rates |
 
 **Quality Control**:
+
 - Should remain stable during operation
 - Changes indicate plumbing problems or leaks
 - Monitor for drift over time
@@ -42,11 +43,13 @@ graph LR
     Sample pressure directly affects measurement accuracy. Changes > 5 mb from typical operation require immediate investigation.
 
 **Quality Control**:
+
 - Record **daily** and compare to historical values
 - Changes indicate problems with flows/pressures in sampling system
 - Will decrease over time as filters become plugged
 
 **Daily Monitoring Protocol**:
+
 1. Record at start of day
 2. Compare to 7-day moving average
 3. Flag if deviation > 10%
@@ -67,6 +70,7 @@ graph LR
 **Flow-Pressure Optimization**:
 
 The optimal flow rate balances:
+
 - Higher flow → Fresh sample, reduced memory effects
 - Lower flow → Better signal-to-noise, more absorption
 - Target: ~90% laser transmittance
@@ -84,6 +88,7 @@ The optimal flow rate balances:
 | **Typical Range** | 320-350 ppb background; higher over agricultural soils |
 
 **Agricultural Context**:
+
 - Background atmospheric: ~333 ppb
 - Enhanced by: Fertilizer application, soil disturbance
 - Temporal patterns: Episodic emissions, freeze-thaw events

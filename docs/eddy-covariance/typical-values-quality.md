@@ -22,21 +22,28 @@
 ### High-Quality Data Requires:
 
 ✓ **Sufficient turbulence**: $u_* > 0.1$ m/s (threshold varies by site)
+
 ✓ **Stationarity**: Flux covariance quality test
+
 ✓ **Horizontal homogeneity**: Footprint within target area
+
 ✓ **Proper sensor function**: No spikes, offsets, or drift
+
 ✓ **Complete data**: < 10% missing high-frequency data
 
 ### Common Issues
 
 === "Insufficient Turbulence"
     **Problem**: Stable atmospheric conditions (nighttime)
+
     **Solution**: Use $u_*$ threshold filtering
 
 === "Sensor Malfunction"
     **Problem**: Dirty optics, calibration drift
+
     **Solution**: Regular maintenance and calibration
 
 === "Rain Events"
     **Problem**: Water on sensor windows
+
     **Solution**: Automated detection and flagging

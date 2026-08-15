@@ -2,14 +2,13 @@
 
 Welcome to the CWR Lab micrometeorological measurement and analysis documentation. This resource is designed for new students, researchers, and staff working with CO2 and N2O flux measurement systems.
 
-## Measurement Sites
+## About the Lab
 
-CWR Lab agrometeorology network include long-term benchmark sites and field towers across Canada. These sites span diverse climates and soil types from Ontario’s humid croplands to the prairie provinces’ dry continental systems, and support side-by-side comparisons of fertilizer practices, crop rotations, cover crops, and inhibitors. Each benchmark site combines continuous micrometeorological flux measurements with soil process studies, providing region-specific insights into nitrous oxide dynamics and the effectiveness of best management practices. Together, these sites form the foundation for scaling farm-level results into national strategies for emission reduction.
+CWR Lab's agrometeorology network includes long-term benchmark sites and field towers across Canada. These sites span diverse climates and soil types (from Ontario's humid croplands to the prairie provinces' dry continental systems) and support side-by-side comparisons of fertilizer practices, crop rotations, cover crops, and inhibitors.
 
-All network sites employ two complementary micrometeorological measurement techniques for quantifying greenhouse gas and energy fluxes:
+Each benchmark site combines continuous micrometeorological flux measurements with soil process studies, providing region-specific insights into nitrous oxide dynamics and the effectiveness of best management practices. Together, these sites form the foundation for scaling farm-level results into national strategies for emission reduction.
 
-1. **Flux-Gradient (FG) Method** - Uses vertical concentration gradients
-2. **Eddy Covariance (EC) Method** - Direct turbulent flux measurements
+All network sites employ two complementary measurement techniques — **Flux-Gradient (FG)** and **Eddy Covariance (EC)** — to quantify greenhouse gas and energy fluxes. See [FG vs. EC](introduction/overview/data-and-methods.md) for a full comparison of the two methods.
 
 ## Quick Navigation
 
@@ -22,6 +21,14 @@ All network sites employ two complementary micrometeorological measurement techn
     About the ON1 site, instrumentation, and measurement principles
 
     [:octicons-arrow-right-24: Get started](introduction/overview/data-and-methods.md)
+
+-   :material-cog:{ .lg .middle } __Processing__
+
+    ---
+
+    How raw data becomes archived flux products
+
+    [:octicons-arrow-right-24: View processing](processing/overview.md)
 
 -   :material-weather-windy:{ .lg .middle } __Eddy-Covariance__
 
@@ -47,51 +54,15 @@ All network sites employ two complementary micrometeorological measurement techn
 
     [:octicons-arrow-right-24: View glossary](glossary/using-this-glossary.md)
 
+-   :material-bookshelf:{ .lg .middle } __References__
+
+    ---
+
+    Instrument manuals, literature, and contacts
+
+    [:octicons-arrow-right-24: View references](references/instrument-manuals.md)
+
 </div>
-
-## Key Features
-
-- **30-minute averaging intervals** for all diagnostic variables
-- **High-frequency measurements** at 10 Hz (EC system)
-- **Dual-method comparison** for data validation
-- **Comprehensive QA/QC guidelines**
-
-## Getting Started
-
-!!! tip "New Users Start Here"
-    1. Read the [Site Overview](introduction/overview/data-and-methods.md) to understand the measurement setup
-    2. Review the [Instrumentation](introduction/instrumentation/flux-gradient.md) section
-    3. Choose measurement method: [EC](eddy-covariance/theory.md) or [FG](flux-gradient/fundamentals/theory.md)
-
-## Video Tutorial
-
-Below is an introductory video explaining the site setup (example of video embedding):
-
-<div class="video-playlist video-embed"
-     data-videos='[
-       "videos/tutorials/CWR_FG_Walkthrough_Part_01r720_part_001.mp4",
-       "videos/tutorials/CWR_FG_Walkthrough_Part_01r720_part_002.mp4"
-     ]'>
-</div>
-<div class="video-placeholder">
-  📹 Video: Introduction to flux measurement workflow, Parts 1–8 — available in the online documentation.
-</div>
-
-## Site Diagram
-
-```mermaid
-graph TB
-    A[ON1 Site] --> B[Eddy Covariance System]
-    A --> C[Flux-Gradient System]
-    B --> D[IRGASON or CSAT-3+Li-7500]
-    B --> E[High-frequency 10 Hz data]
-    C --> F[TGA100A Analyzer]
-    C --> G[Multi-height sampling]
-    D --> H[30-min fluxes]
-    F --> H
-    E --> H
-    G --> H
-```
 
 ## Recent Updates
 
@@ -100,8 +71,3 @@ graph TB
 | Dec 2025 | Initial documentation compiled from instrument manuals |
 | TBD | Site-specific calibration values |
 | TBD | Measurement heights and footprint analysis |
-
----
-
-!!! warning "Important Note"
-    The EC system at ON1 can be configured with either an **IRGASON** (integrated sensor) or separate **CSAT-3 + Li-7500** instruments. [PS: Verify the current configuration]

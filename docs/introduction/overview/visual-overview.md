@@ -48,6 +48,20 @@ graph TD
     style G fill:#c8e6c9
 ```
 
+## Video: Site Setup Tutorial
+
+Below is an introductory video explaining the site setup:
+
+<div class="video-playlist video-embed"
+     data-videos='[
+       "../../../videos/tutorials/CWR_FG_Walkthrough_Part_01r720_part_001.mp4",
+       "../../../videos/tutorials/CWR_FG_Walkthrough_Part_01r720_part_002.mp4"
+     ]'>
+</div>
+<div class="video-placeholder">
+  📹 Video: Introduction to flux measurement workflow, Parts 1–8 — available in the online documentation.
+</div>
+
 ## Video: Introduction to Flux Measurement
 
 <div class="video-embed">

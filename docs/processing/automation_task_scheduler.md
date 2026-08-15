@@ -66,4 +66,4 @@ sequenceDiagram
     (Google Drive API, Dropbox, DriveHQ, and hybrid systems), including
     workflows and pseudocode, see:
 
-    ➤ **[Data Transfer Workflows](data_transfer_workflows.md)**
+    ➤ **[Data Transfer Workflows](data-transfer/architecture-workflow.md)**

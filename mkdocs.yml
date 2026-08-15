@@ -123,8 +123,15 @@ nav:
   - Processing:
       - Processing Overview: processing/overview.md
       - Daily Automation: processing/automation_task_scheduler.md
-      - Data Collection Workflows: processing/data_collection_workflows.md
-      - Data Transfer Workflows: processing/data_transfer_workflows.md
+      - Data Collection:
+          - Architecture & Inventory: processing/data-collection/architecture-inventory.md
+          - EC & TGA Variables: processing/data-collection/ec-tga-variables.md
+          - Met & Soil Variables: processing/data-collection/met-soil-variables.md
+          - Collection Logic & Next Steps: processing/data-collection/collection-logic-next-steps.md
+      - Data Transfer:
+          - Architecture & Workflow: processing/data-transfer/architecture-workflow.md
+          - Transfer Mechanisms: processing/data-transfer/transfer-mechanisms.md
+          - Site Implementations: processing/data-transfer/site-implementations.md
       - Eddy Covariance Pipeline: processing/eddy_covariance_pipeline.md
       - Flux-Gradient Pipeline: processing/flux_gradient_pipeline.md
   - Eddy-Covariance Analysis:

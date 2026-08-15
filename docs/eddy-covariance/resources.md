@@ -30,6 +30,6 @@
 ## Next Steps
 
 - [EC Processing Pipeline](../processing/eddy_covariance_pipeline.md) — how EC data move from raw files through EddyPro to archived products
-- [Flux-Gradient Fundamentals](../flux-gradient/fundamentals.md) — the complementary measurement method used at the same sites
+- [Flux-Gradient Fundamentals](../flux-gradient/fundamentals/theory.md) — the complementary measurement method used at the same sites
 
 <!-- FIX THESE LINKS -->

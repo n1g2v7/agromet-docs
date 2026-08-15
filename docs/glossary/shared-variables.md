@@ -46,6 +46,7 @@ Variables common to both the flux-gradient and eddy covariance systems.
 | **Calculation** | $q = 0.622 \frac{e}{P-0.378e}$ |
 
 Where:
+
 - $e$ = vapor pressure (Pa)
 - $P$ = total pressure (Pa)
 
@@ -61,6 +62,7 @@ Where:
 | **Calculation** | $R_n = SW_{in} - SW_{out} + LW_{in} - LW_{out}$ |
 
 Components:
+
 - SW_in: Incoming shortwave
 - SW_out: Reflected shortwave
 - LW_in: Incoming longwave
